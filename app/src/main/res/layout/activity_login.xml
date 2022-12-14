@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#E8E5ED"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:padding="40dp"
+        >
+
+        <EditText
+            android:id="@+id/userid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Enter User ID"
+            android:textColor="#9A9292"
+            android:textAlignment="textStart">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userid"
+            android:inputType="text"
+            android:text="Enter Password"
+            android:textAlignment="textStart"
+            android:textColor="#9A9292">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/repass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pass"
+            android:inputType="text"
+            android:text="Re-enter Password"
+            android:textAlignment="textStart"
+            android:textColor="#9A9292">
+
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/chk1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/repass"
+            android:text="Remember User ID"
+            android:textAlignment="textStart">
+
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/chk2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chk1"
+            android:checked="true"
+            android:text="Remember Login"
+            android:textAlignment="textStart">
+
+        </CheckBox>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chk2"
+            android:layout_weight="1"
+            android:backgroundTint="#E8E5ED"
+            android:text="Dont have an account?  Signup"
+            android:textAlignment="textStart"
+            android:textColor="#9A9292"
+            android:textSize="10dp"
+            android:textStyle="bold"
+
+            >
+
+        </Button>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnexit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FFC107"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="EXIT"
+            android:textAllCaps="false"
+            >
+
+        </Button>
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FFC107"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Login"
+            android:textAllCaps="false">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
